@@ -4,6 +4,7 @@
   <div class="home">
     <div id="first-part">
       <img src="../assets/lesondees/logo_claim_typo_blanc.png" alt="" id ="logo-nav">
+      <img src="../assets/lesondees/billetterie_button.png" alt="" id ="billetterie-button">
       <img src="../assets/lesondees/background_home.png" alt="" class="background">
     </div>
     <div id="presentation-part">
@@ -30,6 +31,9 @@
         <h2>Merci à nos partenaires</h2>
       </div>
       <Partners/>
+      <div class="button-parts">
+        <ButtonCTA buttonText="Devenir partenaire" @someEvent="goToPartners" />
+      </div>
     </div>
     <div id="bottom-part">
       
@@ -43,9 +47,6 @@
       <img src="../assets/lesondees/logo_claim_typo_blanc_only_les_ondees.png" alt="" class="logo">
     </div>
 
-    
-
-    
   </div>
 
 </template>
@@ -54,16 +55,27 @@
 import Actualities from '../components/Actualities.vue';
 import Partners from '../components/Partners.vue';
 import Photos from '../components/Photos.vue';
+import ButtonCTA from '../components/shared/ButtonCTA.vue';
 
 export default {
   components:{
     Photos,
     Actualities,
-    Partners
+    Partners,
+    ButtonCTA
+  },
+  data() {
+    return {
+      isMenuOpen: false, // Indique si le menu est ouvert
+    };
   },
   methods: {
-    goToAbout() {
-      this.$router.push('/about')
+    goToPartners() {
+      const pdfUrl = "/partners/Dossier_de_partenariat_Les_Ondées_2025.pdf";
+      window.open(pdfUrl, "_blank");
+    },
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen; // Basculer l'état du menu
     },
   },
 }
@@ -81,11 +93,17 @@ export default {
 
 }
 #logo-nav{
-  width: 150px;
+  width: 120px;
   position: absolute;
   top: 0px;
   left: 20px;
   
+}
+#billetterie-button{
+  width: 150px;
+  position: absolute;
+  top: 10px;
+  right: 0px;
 }
 
 /* Présentation part */
@@ -112,6 +130,10 @@ export default {
 
 #logo-title{
   width: 60%;
+}
+
+.button-parts{
+  display: block;
 }
 
 /* Photos */
