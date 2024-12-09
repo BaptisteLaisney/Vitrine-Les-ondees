@@ -81,7 +81,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,160C1120,160,1280,128,1360,112L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>      
       </div>
       <div class="logo-bottom">
-        <img src="../assets/lesondees/logo_claim_typo_blanc_only_les_ondees.png" alt="" class="logo">
+        <img src="../assets/lesondees/logo_claim_typo_blanc.png" alt="" class="logo">
       </div>
     </div>
   </div>
@@ -268,6 +268,7 @@ h2{
 .wave-up, .wave-bottom{
   position: relative;
   min-height: 100px;
+  /* padding: 6% 0% 6% 0%; */
 }
 .wave-up svg{
   position: absolute;

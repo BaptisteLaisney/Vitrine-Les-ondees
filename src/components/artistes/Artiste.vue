@@ -4,15 +4,20 @@
             <div class="wave-bottom">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,160C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
             </div>
-        <h4 >{{ date }}</h4>
-        <div class="wave-up">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,165.3C160,171,320,181,480,197.3C640,213,800,235,960,218.7C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+            <h4 >{{ date }}</h4>
+            <div class="wave-up">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,165.3C160,171,320,181,480,197.3C640,213,800,235,960,218.7C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+            </div>
         </div>
-        </div>
+
 
         <div class="artiste-image">
             <img :src="artisteImage" alt="Artiste Image">
+            <div class="wave-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,133.3C160,107,320,53,480,58.7C640,64,800,128,960,144C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+            </div>
         </div>
+
         <h3>{{ artisteName }}</h3>
         <div class="presentation presentation-first">
             {{ presentationFirst }}
@@ -81,6 +86,14 @@
     display: block;
     object-fit: cover; /* Ensures the image fills the container */
 }
+.artiste-image .wave-bottom{
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    min-height: 100px;
+    top: 0;
+
+}
 
 /* Video Container with 16:9 Aspect Ratio */
 .video-container {
@@ -110,14 +123,11 @@
     background-color: white;
     color: #E86B2A;
 }
-.date h4{
-    padding: 0;
-}
 /** Wave */
 
 .wave-up, .wave-bottom{
   position: relative;
-  min-height: 80px;
+  padding: 6% 0% 6% 0%;
   background-color: white;
 }
 .wave-up svg{
