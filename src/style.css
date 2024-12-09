@@ -39,25 +39,28 @@ h1 {
   font-family: 'BlocHeavy';
 }
 h2{
+  font-size: 1.8em;
   line-height: 1.4;
   margin: 0px;
   padding: 20px 0px 20px 0px;
   font-family: 'BlocHeavy';
-  font-size: 2.3rem;
 }
 h3{
-  line-height: 1.4;
+  font-size: 1.8em;
   margin: 0px;
   padding: 20px 0px 20px 0px;
   font-family: 'BlocHeavy';
-  font-size: 2.3rem;
 }
 h4{
   line-height: 1.2;
   margin: 0px;
   padding: 20px 0px 20px 0px;
   font-family: 'BlocHeavy';
-  font-size: 1.6rem;
+  font-size: 1.4em;
+}
+
+p{
+  font-size: 1em;
 }
 button {
   border-radius: 8px;
@@ -94,5 +97,50 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (min-width: 770px) {
+  h1{
+    font-size: 3em;
+  }
+  h2,h3 {
+      font-size: 2.6em;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  p{
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1200px ) {
+  h1{
+    font-size: 3.3em;
+  }
+  h2,h3 {
+      font-size: 3em;
+  }
+  h4 {
+    font-size: 2.3em;
+  }
+  p{
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width:1360px ) {
+  h1{
+    font-size: 3.6em;
+  }
+  h2,h3 {
+      font-size: 3.2em;
+  }
+  h4 {
+    font-size: 2.6em;
+  }
+  p{
+    font-size: 1.6em;
   }
 }

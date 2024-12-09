@@ -19,9 +19,9 @@
         </div>
 
         <h3>{{ artisteName }}</h3>
-        <div class="presentation presentation-first">
+        <p class="presentation presentation-first">
             {{ presentationFirst }}
-        </div>
+        </p>
         <h4>
             {{ songName }}
         </h4>
@@ -37,9 +37,9 @@
                 allowfullscreen>
             </iframe>
         </div>
-        <div class="presentation presentation-second">
+        <p class="presentation presentation-second">
             {{ presentationSecond }}
-        </div>
+        </p>
     </div>
 </template>
 

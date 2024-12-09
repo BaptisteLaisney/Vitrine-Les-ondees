@@ -17,13 +17,13 @@
 
     <div id="presentation-part">
       <h1>Les Ondées passent<br>sur 2 jours !</h1>
-      <div id="presentation">
-        Les Ondées reviennent au Cargö les <b> vendredi 23 et samedi 24 mai 2025 </b> ! Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passent la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
-      </div>
+      <p class="presentation">
+        <strong> Les Ondées reviennent au Cargö les vendredi 23 et samedi 24 mai 2025 </strong> ! Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passent la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
+      </p>
       <img src="../assets/lesondees/logo_claim_typo_blanc_only_les_ondees.png" alt="" id ="logo-title">
-      <div id="presentation">
+      <p class="presentation">
         Après avoir <b>affiché complet en 2024</b>, Les Ondées s’imposent au grès des éditions comme un rendez-vous incontournable des étudiant·es caennais·es, et plus encore ! 
-      </div>
+      </p>
     </div>
     <h2>Les premiers <br> noms</h2>
     <div class="artistes">
@@ -170,8 +170,7 @@ export default {
   width: 100%;
 }
 
-#presentation{
-  font-size: 1rem;
+.presentation{
   text-align: left;
   padding: 20px;
   
@@ -281,6 +280,16 @@ h2{
   left : 0px
 }
 
+
+@media (min-width: 770px) {
+}
+
+@media (min-width: 1200px ) {
+
+}
+
+@media (min-width:1360px ) {
+}
 
 
 </style>
