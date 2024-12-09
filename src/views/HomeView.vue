@@ -61,10 +61,18 @@
     <div id="bottom-part">
       <img src="../assets/lesondees/bottom_image.png" alt="" class="background">
       <div class="social-medias">
-        <img src="../assets/logos/facebook.png" alt="" class="social-media">
-        <img src="../assets/logos/instagram.png" alt="" class="social-media">
-        <img src="../assets/logos/linkedin.png" alt="" class="social-media">
-        <img src="../assets/logos/tiktok.png" alt="" class="social-media">
+        <a href="https://www.facebook.com/lesondees" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/logos/facebook.png" alt="Facebook" class="social-media" />
+        </a>
+        <a href="https://www.instagram.com/lesondees/" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/logos/instagram.png" alt="Instagram" class="social-media" />
+        </a>
+        <a href="https://www.linkedin.com/company/les-ond%C3%A9es/" target="_blank" rel="noopener noreferrer" >
+          <img src="../assets/logos/linkedin.png" alt="LinkedIn" class="social-media" />
+        </a>
+        <a href="https://www.tiktok.com/@les_ondees" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/logos/tiktok.png" alt="TikTok" class="social-media" />
+        </a>
       </div>
       <div class="wave-up">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,224L60,197.3C120,171,240,117,360,101.3C480,85,600,107,720,117.3C840,128,960,128,1080,117.3C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>      </div>
@@ -72,7 +80,6 @@
         <img src="../assets/lesondees/logo_claim_typo_blanc_only_les_ondees.png" alt="" class="logo">
       </div>
     </div>
-
   </div>
 
 </template>
@@ -172,6 +179,7 @@ export default {
 
 .button-parts{
   display: block;
+  padding: 30px;
 }
 
 /* Photos */
