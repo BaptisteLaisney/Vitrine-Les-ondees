@@ -39,7 +39,6 @@ export default {
     flex: 0 0 auto; /* Prevents items from shrinking and allows horizontal alignment */
     width: 40%; /* Set a fixed width for each item to control size */
     position: relative;
-
     border: 1px solid white;
 }
 

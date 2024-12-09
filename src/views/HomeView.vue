@@ -16,22 +16,25 @@
     </div>
 
     <div id="presentation-part">
-      
       <h1>Les Ondées passent<br>sur 2 jours !</h1>
       <div id="presentation">
         Les Ondées reviennent au Cargö les <b> vendredi 23 et samedi 24 mai 2025 </b> ! Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passent la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
       </div>
+      <img src="../assets/lesondees/logo_claim_typo_blanc_only_les_ondees.png" alt="" id ="logo-title">
       <div id="presentation">
         Après avoir <b>affiché complet en 2024</b>, Les Ondées s’imposent au grès des éditions comme un rendez-vous incontournable des étudiant·es caennais·es, et plus encore ! 
       </div>
     </div>
-    <img src="../assets/lesondees/logo_claim_typo_blanc_only_les_ondees.png" alt="" id ="logo-title">
+    <h2>Les premiers <br> noms</h2>
+    <div class="artistes">
+      <Artistes/>
+    </div>
     <div id="photos-part">
       <h2>Nos photos</h2>
       <Photos/>
-      <div id="voir-plus">
+      <!-- <div id="voir-plus">
         voir plus...
-      </div>
+      </div> -->
       <div class="wave-up">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path fill="#ffffff" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,74.7C640,64,800,32,960,37.3C1120,43,1280,85,1360,106.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
@@ -75,7 +78,8 @@
         </a>
       </div>
       <div class="wave-up">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,224L60,197.3C120,171,240,117,360,101.3C480,85,600,107,720,117.3C840,128,960,128,1080,117.3C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>      </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,160C1120,160,1280,128,1360,112L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>      
+      </div>
       <div class="logo-bottom">
         <img src="../assets/lesondees/logo_claim_typo_blanc_only_les_ondees.png" alt="" class="logo">
       </div>
@@ -89,13 +93,14 @@ import Actualities from '../components/Actualities.vue';
 import Partners from '../components/Partners.vue';
 import Photos from '../components/Photos.vue';
 import ButtonCTA from '../components/shared/ButtonCTA.vue';
-
+import Artistes from '../components/artistes/Artistes.vue';
 export default {
   components:{
     Photos,
     Actualities,
     Partners,
-    ButtonCTA
+    ButtonCTA,
+    Artistes
   },
   data() {
     return {
@@ -113,7 +118,7 @@ export default {
   },
 }
 </script>
-<style>
+<style scoped>
 .home{
   background-color: #E86B2A;
 }
@@ -166,7 +171,6 @@ export default {
 }
 
 #presentation{
-  font-family: 'Montserrat';
   font-size: 1rem;
   text-align: left;
   padding: 20px;
@@ -175,6 +179,7 @@ export default {
 
 #logo-title{
   width: 60%;
+  margin: auto;
 }
 
 .button-parts{
