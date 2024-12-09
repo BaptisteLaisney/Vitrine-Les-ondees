@@ -2,7 +2,8 @@
   <div class="home">
     <div id="first-part">
       <img src="../assets/lesondees/logo_claim_typo_blanc.png" alt="" id ="logo-nav">
-      <img src="../assets/lesondees/billetterie_button.png" alt="" id ="billetterie-button">
+      <ButtonTicketing/>
+
       <video autoplay muted loop playsinline class="background custom-video">
         <source src="../assets/videos/After_movie.mp4" type="video/mp4" />
         Votre navigateur ne supporte pas les vidéos HTML5.
@@ -16,16 +17,28 @@
     </div>
 
     <div id="presentation-part">
-      <h1>Les Ondées passent<br>sur 2 jours !</h1>
-      <p class="presentation">
-        <strong> Les Ondées reviennent au Cargö les vendredi 23 et samedi 24 mai 2025 </strong> ! Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passent la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
-      </p>
-      <img src="../assets/lesondees/logo_claim_typo_blanc_only_les_ondees.png" alt="" id ="logo-title">
-      <p class="presentation">
-        Après avoir <b>affiché complet en 2024</b>, Les Ondées s’imposent au grès des éditions comme un rendez-vous incontournable des étudiant·es caennais·es, et plus encore ! 
-      </p>
+      
+      <div class="line ">
+        <div class="presentation">
+          <h1>Les Ondées passent<br>sur 2 jours !</h1>
+          <p>
+            <strong> Les Ondées reviennent au Cargö les vendredi 23 et samedi 24 mai 2025 </strong> ! Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passent la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
+          </p>
+        </div>
+        <img src="../assets/photos-selection/Spider Zed 3 (c)Lukastivecrea.jpeg" alt="">
+      </div>
+      <div class="line">
+        <img src="../assets/photos-selection/(c) @nath_pics 3.jpg" alt="">
+        <div class="presentation">
+          <h2>Le rendez-vous caennais !</h2>
+          <p>
+            Après avoir <b>affiché complet en 2024</b>, Les Ondées s’imposent au grès des éditions comme un rendez-vous incontournable des étudiant·es caennais·es, et plus encore ! 
+          </p>
+        </div>
+
+      </div>
     </div>
-    <h2>Les premiers <br> noms</h2>
+    <h2>Les premiers noms</h2>
     <div class="artistes">
       <Artistes/>
     </div>
@@ -94,13 +107,15 @@ import Partners from '../components/Partners.vue';
 import Photos from '../components/Photos.vue';
 import ButtonCTA from '../components/shared/ButtonCTA.vue';
 import Artistes from '../components/artistes/Artistes.vue';
+import ButtonTicketing from '../components/ButtonTicketing.vue';
 export default {
   components:{
     Photos,
     Actualities,
     Partners,
     ButtonCTA,
-    Artistes
+    Artistes,
+    ButtonTicketing
   },
   data() {
     return {
@@ -149,32 +164,11 @@ export default {
   bottom: 0px;
   left: 0px;
 }
-#billetterie-button{
-  width: 150px;
-  position: absolute;
-  top: 10px;
-  right: 0px;
-}
-
-/* Présentation part */
-
-#presentation-part{
-  display: flex;
-  flex-direction: column;
-  background-color: #E86B2A;
-  justify-content: center;
-
-}
 
 #first-part .background{
   width: 100%;
 }
 
-.presentation{
-  text-align: left;
-  padding: 20px;
-  
-}
 
 #logo-title{
   width: 60%;
@@ -185,6 +179,34 @@ export default {
   display: block;
   padding: 30px;
 }
+/* Présentation part */
+
+.line{
+  display: flex;
+  flex-direction: column;
+  background-color: #E86B2A;
+  justify-content: center;
+  padding: 10px 20px 0px 10px ;
+
+
+}
+
+.line h2 {
+  display: none;
+}
+
+.line img{
+  display: none;
+  height: auto;
+}
+.presentation{
+  text-align: left;
+}
+.presentation h1{
+  text-align: center;
+  padding: 20px;
+}
+
 
 /* Photos */
 
@@ -282,6 +304,41 @@ h2{
 
 
 @media (min-width: 770px) {
+  .custom-video {
+    height: 85vh;
+
+  }
+  #billetterie-button{
+    top: 20%;
+    width: 200px;
+  }
+  /** Présentation */
+  .line h1{
+    font-size: 2.8rem;
+    text-align: left;
+    padding-left:0px ;
+  }
+  .line{
+    flex-direction: row;
+    margin-left: 30px;
+    padding: 20px;
+
+  }
+  .line .presentation{
+    margin: 0px;
+    width: 50%;
+
+  }
+  .line img{
+    display: block;
+    padding: 5%;
+    width: 40%;
+
+  }
+  .line h2 {
+    display: block;
+  }
+
 }
 
 @media (min-width: 1200px ) {
