@@ -7,7 +7,14 @@
         <source src="../assets/videos/After_movie.mp4" type="video/mp4" />
         Votre navigateur ne supporte pas les vidéos HTML5.
       </video>
+      <div class="wave-up">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#E86B2A" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,208C384,213,480,235,576,250.7C672,267,768,277,864,266.7C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+      
     </div>
+
     <div id="presentation-part">
       
       <h1>Les Ondées passent<br>sur 2 jours !</h1>
@@ -25,22 +32,33 @@
       <div id="voir-plus">
         voir plus...
       </div>
+      <div class="wave-up">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#ffffff" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,74.7C640,64,800,32,960,37.3C1120,43,1280,85,1360,106.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+      </div>
     </div>
+
     <div id="actualities-part">
+
       <h2>Nos actualités</h2>
       <Actualities/>
     </div>
     <div id="partners-part">
+      <div class="wave-up">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0000000" fill-opacity="1" d="M0,160L60,170.7C120,181,240,203,360,224C480,245,600,267,720,256C840,245,960,203,1080,197.3C1200,192,1320,224,1380,240L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+      </div>
       <div id="title-partners">
         <h2>Merci à nos partenaires</h2>
       </div>
+      <div class="wave-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0000000" fill-opacity="1" d="M0,32L60,26.7C120,21,240,11,360,26.7C480,43,600,85,720,90.7C840,96,960,64,1080,64C1200,64,1320,96,1380,112L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>      </div>
       <Partners/>
       <div class="button-parts">
         <ButtonCTA buttonText="Devenir partenaire" @someEvent="goToPartners" />
       </div>
     </div>
     <div id="bottom-part">
-      
       <img src="../assets/lesondees/bottom_image.png" alt="" class="background">
       <div class="social-medias">
         <img src="../assets/logos/facebook.png" alt="" class="social-media">
@@ -48,7 +66,11 @@
         <img src="../assets/logos/linkedin.png" alt="" class="social-media">
         <img src="../assets/logos/tiktok.png" alt="" class="social-media">
       </div>
-      <img src="../assets/lesondees/logo_claim_typo_blanc_only_les_ondees.png" alt="" class="logo">
+      <div class="wave-up">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,224L60,197.3C120,171,240,117,360,101.3C480,85,600,107,720,117.3C840,128,960,128,1080,117.3C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>      </div>
+      <div class="logo-bottom">
+        <img src="../assets/lesondees/logo_claim_typo_blanc_only_les_ondees.png" alt="" class="logo">
+      </div>
     </div>
 
   </div>
@@ -93,6 +115,7 @@ export default {
   height: 75vh; /* Hauteur fixe pour un ratio 16:9 */
   object-fit: cover;
 }
+
 /* First part */
 
 #first-part{
@@ -107,6 +130,12 @@ export default {
   top: 0px;
   left: 20px;
   
+}
+#first-part .wave-up{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 #billetterie-button{
   width: 150px;
@@ -160,8 +189,12 @@ export default {
 
 #actualities-part{
   background-color: white;
+  position: relative;
+  display: block;
 }
-
+h2{
+  display: block;
+}
 #actualities-part h2{
   color: #E86B2A;
 }
@@ -175,16 +208,19 @@ export default {
 #partners-part #title-partners{
   color: white;
   background-color: black;
-  padding: 10px 0px 10px 0px;
+  padding: 0px;
+}
+#partners-part h2{
+  padding: 0px;
 }
 
 /** Bottom */
 
 #bottom-part{
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   position: relative;
-  background-color: #E86B2A;
+  background-color: black;
   justify-content: center;
   align-items: center;
 
@@ -194,11 +230,10 @@ export default {
 }
 #bottom-part .logo{
   width: 40%;
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
 }
 .social-medias{
-  padding: 40px 0px 40px 0px;
-  background-color: black;
+  padding: 40px 0px 0px 0px;
   width: 100%;
   display: flex;
   width: 100%;
@@ -207,8 +242,31 @@ export default {
   justify-content: center; 
 }
 
+.logo-bottom{
+  background-color: #E86B2A;
+}
 .social-media{
   width: 40px;
   padding: 10px;
 }
+
+/** Wave */
+
+.wave-up, .wave-bottom{
+  position: relative;
+  min-height: 100px;
+}
+.wave-up svg{
+  position: absolute;
+  bottom: -1px;
+  left : 0px
+}
+.wave-bottom svg{
+  position: absolute;
+  top: -1px;
+  left : 0px
+}
+
+
+
 </style>

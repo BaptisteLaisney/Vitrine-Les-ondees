@@ -27,7 +27,6 @@ export default {
 
 <style scoped>
 #partners {
-    margin-top:10px ;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
