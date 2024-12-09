@@ -1,7 +1,9 @@
 <template>
     <div id="actualities">
         <div class="actuality" v-for="item in itemList" :key="item.id">
-            <img  :src="`/src/assets/actualities/${item.name}`"/>
+                        <a :href="item.link" target="_blank" rel="noopener noreferrer">
+                            <img  :src="`/src/assets/actualities/${item.name}`"/>
+            </a>
         </div>
     </div>
 </template>
@@ -10,15 +12,9 @@ export default {
     setup () {
         function getItemList() {
         return [
-            { id: 1, name: '25_etudiants.png' },
-            { id: 2, name: '25_etudiants.png' },
-            { id: 3, name: '25_etudiants.png' },
-            { id: 4, name: '25_etudiants.png' },
-            { id: 5, name: '25_etudiants.png' },
-            { id: 6, name: '25_etudiants.png' },
-            { id: 7, name: '25_etudiants.png' },
-            { id: 8, name: '25_etudiants.png' },
-            { id: 9, name: '25_etudiants.png' }
+            { id: 1, name: 'que_sont_ils_devenues.jpeg', link:"https://www.instagram.com/p/DBJsyNbtOMx/?img_index=1" },
+            { id: 2, name: 'recherche_partenaires.png', link:"https://www.linkedin.com/feed/update/urn:li:activity:7264587888418328576" },
+            { id: 3, name: '25_etudiants.png', link: 'https://www.instagram.com/p/DCmdQCDOCti/?img_index=2'},
         ];
         }
         const itemList = getItemList();
@@ -49,8 +45,9 @@ export default {
 
 .actuality img {
     width: 100%;
-    height: auto; /* Maintains aspect ratio */
+    height: 100%;
     position: relative;
     display: block;
+    object-fit: cover;
 }
 </style>

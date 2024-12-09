@@ -1,17 +1,21 @@
-
-
 <template>
   <div class="home">
     <div id="first-part">
       <img src="../assets/lesondees/logo_claim_typo_blanc.png" alt="" id ="logo-nav">
       <img src="../assets/lesondees/billetterie_button.png" alt="" id ="billetterie-button">
-      <img src="../assets/lesondees/background_home.png" alt="" class="background">
+      <video autoplay muted loop playsinline class="background custom-video">
+        <source src="../assets/videos/After_movie.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas les vidéos HTML5.
+      </video>
     </div>
     <div id="presentation-part">
-      <h1>Les ondées<br>reviennent !</h1>
+      
+      <h1>Les Ondées passent<br>sur 2 jours !</h1>
       <div id="presentation">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac justo sed neque accumsan mollis. Quisque vitae ipsum a eros iaculis commodo.
-        
+        Les Ondées reviennent au Cargö les <b> vendredi 23 et samedi 24 mai 2025 </b> ! Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passent la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
+      </div>
+      <div id="presentation">
+        Après avoir <b>affiché complet en 2024</b>, Les Ondées s’imposent au grès des éditions comme un rendez-vous incontournable des étudiant·es caennais·es, et plus encore ! 
       </div>
     </div>
     <img src="../assets/lesondees/logo_claim_typo_blanc_only_les_ondees.png" alt="" id ="logo-title">
@@ -83,6 +87,11 @@ export default {
 <style>
 .home{
   background-color: #E86B2A;
+}
+.custom-video {
+  width: 100%; /* Largeur fixe */
+  height: 75vh; /* Hauteur fixe pour un ratio 16:9 */
+  object-fit: cover;
 }
 /* First part */
 
