@@ -14,6 +14,7 @@
             :date="artiste.date"
             :day="artiste.day"
             :isReverse="artiste.isReverse"
+            :isDateVisible="artiste.isDateVisible"
             :instagram="artiste.instagram"
             :spotify="artiste.spotify"
             :deezer="artiste.deezer"

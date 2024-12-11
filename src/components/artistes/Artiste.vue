@@ -1,6 +1,6 @@
 <template>
     <div id="artiste" :class="['artiste', { reverse: isReverse }]">
-        <div class="date">
+        <div :class="['date', { visible: isDateVisible }]">
             <div class="wave-bottom">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,160C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
             </div>
@@ -114,6 +114,10 @@
         isReverse: {
             type: Boolean,
             default: false,
+        },
+        isDateVisible: {
+            type: Boolean,
+            default: true,
         },
         instagram: {
             type: String
@@ -244,6 +248,12 @@ h4{
 .content h3{
     padding-bottom:0 ;
 }
+.date {
+    display: none;
+}
+.date.visible{
+    display: block;
+}
 
 
 
@@ -332,6 +342,9 @@ h4{
     }
     .video-2{
         display: block;
+    }
+    .date.visible{
+        display: none;
     }
 
 }
