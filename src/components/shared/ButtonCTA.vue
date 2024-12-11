@@ -32,5 +32,18 @@ export default {
   margin: 10px;
 
 }
+@media (min-width: 770px) {
+    #button-cta{
+        font-size: 2.4em;
+        margin: 50px;
+        padding: 10px 50px;
+    }
+}
+@media (min-width: 1200px ) {
+
+}
+
+@media (min-width:1360px ) {
+}
 
 </style>

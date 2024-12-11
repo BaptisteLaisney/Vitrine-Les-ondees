@@ -48,28 +48,36 @@
       <!-- <div id="voir-plus">
         voir plus...
       </div> -->
-      <div class="wave-up">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#ffffff" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,74.7C640,64,800,32,960,37.3C1120,43,1280,85,1360,106.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-        </svg>
-      </div>
+
     </div>
 
     <div id="actualities-part">
+      <div class="wave-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,160C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+            </div>
+
 
       <h2>Nos actualités</h2>
       <Actualities/>
     </div>
     <div id="partners-part">
-      <div class="wave-up">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0000000" fill-opacity="1" d="M0,160L60,170.7C120,181,240,203,360,224C480,245,600,267,720,256C840,245,960,203,1080,197.3C1200,192,1320,224,1380,240L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-      </div>
+
       <div id="title-partners">
+        <div class="wave-up">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0000000" fill-opacity="1" d="M0,160L60,170.7C120,181,240,203,360,224C480,245,600,267,720,256C840,245,960,203,1080,197.3C1200,192,1320,224,1380,240L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> -->
+        
+          <svg  viewBox="0 0 1728 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1740 7.17298C1740 7.17298 1613.14 18.6765 1531.37 19.2015C1439.35 19.7922 1388.28 10.6553 1296.4 7.17298C1123.4 0.616306 1026 -1.81703 852.795 1.43211C676.751 4.73458 579.213 22.773 403.116 24.3956C244.784 25.8545 -2 12.9138 -2 12.9138V58.8407H1740V7.17298Z" fill="black"/>
+</svg>
+        </div>
         <h2>Merci à nos partenaires</h2>
+        <div class="wave-bottom">
+          <svg  viewBox="0 0 1728 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-2 55.1317C-2 55.1317 124.865 42.8798 206.635 42.3207C298.655 41.6916 441.602 55.1317 441.602 55.1317C441.602 55.1317 712.002 64.7066 885.205 61.2461C1061.25 57.7288 1158.79 38.5168 1334.88 36.7887C1493.22 35.2349 1740 49.0174 1740 49.0174V0.102608H-2V55.1317Z" fill="black"/>
+          </svg>
+        </div>
       </div>
-      <div class="wave-bottom">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0000000" fill-opacity="1" d="M0,32L60,26.7C120,21,240,11,360,26.7C480,43,600,85,720,90.7C840,96,960,64,1080,64C1200,64,1320,96,1380,112L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>      </div>
-      <Partners/>
+        <Partners/>
       <div class="button-parts">
         <ButtonCTA buttonText="Devenir partenaire" @someEvent="goToPartners" />
       </div>
@@ -241,11 +249,14 @@ h2{
 
 #partners-part #title-partners{
   color: white;
-  background-color: black;
+  background-color: white;
   padding: 0px;
 }
+#partners-part #title-partners h2{
+  background-color: black;
+}
 #partners-part h2{
-  padding: 0px;
+  /* padding: 0px; */
 }
 
 /** Bottom */
@@ -340,8 +351,17 @@ h2{
   }
 
   /**Artites */
-  .artistes{
+  h2{
     margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #title-partners{
+    padding-top: 100px;
+    background-color: white;
+  }
+  #title-partners h2{
+    margin: 0;
+    background-color: aliceblue;
   }
 
 }

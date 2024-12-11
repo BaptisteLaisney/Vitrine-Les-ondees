@@ -27,7 +27,7 @@ export default {
 
 <style scoped>
 #actualities {
-    width: 100%;
+
     display: flex;
     overflow-x: auto; /* Enables horizontal scrolling */
     white-space: nowrap; /* Prevents items from wrapping to the next line */
@@ -49,4 +49,28 @@ export default {
     display: block;
     object-fit: cover;
 }
+
+@media (min-width: 770px) {
+    #actualities{
+        width: 70%;
+        margin: auto;
+        margin: 0px 0px 100px 0px;
+        margin: auto;
+    }
+    .actuality {
+        margin: 10px;
+        flex: 0 0 auto; /* Prevents items from shrinking and allows horizontal alignment */
+        width: 30%; /* Set a fixed width for each item to control size */
+        position: relative;
+        border: 1px solid white;
+    }
+
+}
+@media (min-width: 1200px ) {
+
+}
+
+@media (min-width:1360px ) {
+}
+
 </style>

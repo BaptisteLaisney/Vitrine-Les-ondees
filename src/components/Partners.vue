@@ -32,6 +32,7 @@ export default {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-around;
+    margin: auto;
 }
 
 .partner {
@@ -48,4 +49,13 @@ export default {
     object-fit: contain;
     display: block;
 }
+@media (min-width: 770px) {
+    #partners {
+        width: 70%;
+    }
+    .partner {
+        width: 20%; 
+    }
+}
+
 </style>

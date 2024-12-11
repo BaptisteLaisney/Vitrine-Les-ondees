@@ -10,7 +10,11 @@
         "songName2": "Ajna - novotel",
         "songLink2": "https://www.youtube.com/embed/PT_7mRybiUE",
         "date": "23-05-2025",
-        "isReverse": true
+        "isReverse": true,
+        "instagram": "",
+        "linkedin": "",
+        "tiktok": ""
+        
     },
     {
         "id": 2,
@@ -23,6 +27,9 @@
         "songName2": "THEODORA - JTM 1 PEU / MON CASQUE",
         "songLink2": "https://www.youtube.com/embed/eDZM-tbEJbE",
         "date": "24-05-2025",
-        "isReverse": false
+        "isReverse": false,
+        "facebook": "",
+        "instagram": "https://www.instagram.com/theodorabosslady/?hl=fr",
+        "tiktok": ""
     }
 ]
