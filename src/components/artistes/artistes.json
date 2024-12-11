@@ -1,5 +1,23 @@
 [
     {
+        "id": 3,
+        "name": "THEODORA",
+        "image": "/src/assets/artistes/THEODORA.jpg",
+        "presentationFirst": "Theodora a pris son temps, mais elle est enfin prête à faire son retour. L’artiste revient avec son nouveau projet *Bad Boy Lovestory*, porté par le morceau viral *KONGOLESE SOUS BBL",
+        "presentationSecond": "L’objectif est de proposer un véritable blockbuster créatif, capable de toucher un large public, tout en conservant l’originalité qui la caractérise. Theodora compte sur cet opus pour franchir une nouvelle étape notamment avec le morceau *FASHION DESIGNA* produit par Jonh Makabi (Aya Nakamura, Fally Ipupa). Un véritable hit qui résume la nouvelle Theodora, celle qui ose tout et souhaite faire dans la France. On retrouvera également sur le projet en compositeur Neon Valley (Disiz), Lasso/Koboi (Eddy de Pretto) ou encore Neophron (Luther) pour un projet riche en musicalité.",
+        "songName1": "THEODORA - KONGOLESE SOUS BBL",
+        "songLink1": "https://www.youtube.com/embed/d2tnwgcBfoA",
+        "songName2": "THEODORA - JTM 1 PEU / MON CASQUE",
+        "songLink2": "https://www.youtube.com/embed/eDZM-tbEJbE",
+        "date": "24-05-2025",
+        "day": "Samedi 24 Mai 2025",
+        "isReverse": true,
+        "isDateVisible" : true,
+        "instagram": "https://www.instagram.com/theodorabosslady/?hl=fr",
+        "spotify": "https://open.spotify.com/intl-fr/artist/3PpJbrAbphauEun8Xf9tD2?si=nEQDcRORTmeB_S7fgC5c-g",
+        "deezer": "https://www.deezer.com/fr/artist/13820325"
+    },
+    {
         "id": 1,
         "name": "AJNA",
         "image": "/src/assets/artistes/AJNA.jpeg",
@@ -11,27 +29,11 @@
         "songLink2": "https://www.youtube.com/embed/PT_7mRybiUE",
         "date": "23-05-2025",
         "day": "Vendredi 23 Mai 2025",
-        "isReverse": true,
+        "isReverse": false,
+        "isDateVisible" : true,
         "instagram": "https://www.instagram.com/ajnadontsleep",
         "spotify": "https://open.spotify.com/intl-fr/artist/3tMXAn9bB1GcLfPaukbrSS?si=6nLYZ40YRJSoAodlwrR08Q",
         "deezer": "https://www.deezer.com/fr/artist/1197134"
         
-    },
-    {
-        "id": 2,
-        "name": "THEODORA",
-        "image": "/src/assets/artistes/THEODORA.jpg",
-        "presentationFirst": "Theodora a pris son temps, mais elle est enfin prête à faire son retour. L’artiste revient avec son nouveau projet *Bad Boy Lovestory*, porté par le morceau viral *KONGOLESE SOUS BBL",
-        "presentationSecond": "L’objectif est de proposer un véritable blockbuster créatif, capable de toucher un large public, tout en conservant l’originalité qui la caractérise. Theodora compte sur cet opus pour franchir une nouvelle étape notamment avec le morceau *FASHION DESIGNA* produit par Jonh Makabi (Aya Nakamura, Fally Ipupa). Un véritable hit qui résume la nouvelle Theodora, celle qui ose tout et souhaite faire dans la France. On retrouvera également sur le projet en compositeur Neon Valley (Disiz), Lasso/Koboi (Eddy de Pretto) ou encore Neophron (Luther) pour un projet riche en musicalité.",
-        "songName1": "THEODORA - KONGOLESE SOUS BBL",
-        "songLink1": "https://www.youtube.com/embed/d2tnwgcBfoA",
-        "songName2": "THEODORA - JTM 1 PEU / MON CASQUE",
-        "songLink2": "https://www.youtube.com/embed/eDZM-tbEJbE",
-        "date": "24-05-2025",
-        "day": "Samedi 24 Mai 2025",
-        "isReverse": false,
-        "instagram": "https://www.instagram.com/theodorabosslady/?hl=fr",
-        "spotify": "https://open.spotify.com/intl-fr/artist/3PpJbrAbphauEun8Xf9tD2?si=nEQDcRORTmeB_S7fgC5c-g",
-        "deezer": "https://www.deezer.com/fr/artist/13820325"
     }
 ]
