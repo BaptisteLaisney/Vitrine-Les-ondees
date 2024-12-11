@@ -34,7 +34,7 @@ export default {
 }
 @media (min-width: 770px) {
     #button-cta{
-        font-size: 2.4em;
+        font-size: 1.5em;
         margin: 50px;
         padding: 10px 50px;
     }

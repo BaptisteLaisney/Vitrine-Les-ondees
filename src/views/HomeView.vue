@@ -363,7 +363,16 @@ h2{
     margin: 0;
     background-color: aliceblue;
   }
+  /** Bottom */
 
+  #bottom-part .background, #bottom-part .wave-up{
+    display: none;
+  }
+  #bottom-part .logo-bottom{
+    margin: auto;
+    background-color: transparent;
+    width: 23%;
+  }
 }
 
 @media (min-width: 1200px ) {

@@ -26,17 +26,14 @@
                     {{ presentationSecond }}
                 </p>
                 <div class="social-medias">
-                    <a href="https://www.facebook.com/lesondees" target="_blank" rel="noopener noreferrer">
-                        <img src="../../assets/logos/facebook.png" alt="Facebook" class="social-media" />
-                    </a>
-                    <a href="https://www.instagram.com/lesondees/" target="_blank" rel="noopener noreferrer">
+                    <!-- <a href="" target="_blank" rel="noopener noreferrer">
                         <img src="../../assets/logos/instagram.png" alt="Instagram" class="social-media" />
+                    </a> -->
+                    <a :href="spotify" target="_blank" rel="noopener noreferrer" >
+                        <img src="../../assets/logos/spotify.webp" alt="Spotify" class="social-media" />
                     </a>
-                    <a href="https://www.linkedin.com/company/les-ond%C3%A9es/" target="_blank" rel="noopener noreferrer" >
-                        <img src="../../assets/logos/linkedin.png" alt="LinkedIn" class="social-media" />
-                    </a>
-                    <a href="https://www.tiktok.com/@les_ondees" target="_blank" rel="noopener noreferrer">
-                        <img src="../../assets/logos/tiktok.png" alt="TikTok" class="social-media" />
+                    <a :href="deezer" target="_blank" rel="noopener noreferrer">
+                        <img src="../../assets/logos/deezer.png" alt="Deezer" class="social-media" />
                     </a>
                 </div>
             </div>
@@ -114,6 +111,15 @@
             type: Boolean,
             default: false,
         },
+        instagram: {
+            type: String
+        },
+        spotify: {
+            type: String
+        },
+        deezer: {
+            type: String
+        }
         
     }  
     }

@@ -59,12 +59,12 @@ export default {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 4px 0px;
     justify-content: space-between;
 }
 
 .photo {
-    width: 31%;
+    width: 32%;
     aspect-ratio: 1 / 1;
     position: relative;
     border: 1px solid white;
@@ -108,6 +108,9 @@ export default {
 @media (min-width: 770px ) {
     .photo{
         aspect-ratio: 16 / 9;
+    }
+    #photos {
+        gap: 8px 0px;
     }
 }
 @media (min-width: 1200px ) {

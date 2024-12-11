@@ -13,6 +13,9 @@
             :songLink2="artiste.songLink2"
             :date="artiste.date"
             :isReverse="artiste.isReverse"
+            :instagram="artiste.instagram"
+            :spotify="artiste.spotify"
+            :deezer="artiste.deezer"
         />
     </div>
 </template>
