@@ -19,6 +19,7 @@
             </div>
             <div class="content">
                 <h3>{{ artisteName }}</h3>
+                <span class="date-under">{{day}}</span>
                 <p class="presentation presentation-first">
                     {{ presentationFirst }}
                 </p>
@@ -107,6 +108,9 @@
         date: {
             type: String
         },
+        day: {
+            type: String
+        },
         isReverse: {
             type: Boolean,
             default: false,
@@ -175,6 +179,9 @@
     border: none;
 }
 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
         padding: 5%;
     }
 .presentation{
@@ -229,6 +236,15 @@ h4{
   top: -1px;
   left : 0px
 }
+.date-under{
+    font-size: 0.9rem;
+    text-align: left;
+    font-family: 'BlocHeavy';
+}
+.content h3{
+    padding-bottom:0 ;
+}
+
 
 
 /* For older browser support without aspect-ratio */
@@ -288,10 +304,20 @@ h4{
         width: 70px;
         padding: 0px 50px 0px 0px;
     }
+
+    .content{
+        align-items: start;
+    }
     .content h3{
         text-align: left;
         font-size: 4rem;
     }
+    .date-under{
+        font-size: 1.8rem;
+        text-align: left;
+        font-family: 'BlocHeavy';
+    }
+
     .artiste {
         display: flex;
         flex-direction: row;
@@ -307,6 +333,7 @@ h4{
     .video-2{
         display: block;
     }
+
 }
 
 @media (min-width: 1200px ) {

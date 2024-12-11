@@ -12,6 +12,7 @@
             :songName2="artiste.songName2"
             :songLink2="artiste.songLink2"
             :date="artiste.date"
+            :day="artiste.day"
             :isReverse="artiste.isReverse"
             :instagram="artiste.instagram"
             :spotify="artiste.spotify"
