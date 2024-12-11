@@ -1,12 +1,15 @@
 <template>
-    <div id="button-ticketing">
+    <div id="button-ticketing" >
         <div id="cool-down">
             <span>
                 {{ countdown }}
             </span>
         </div>
-        <img src="../assets/lesondees/billetterie_button.png" alt="Billetterie" id="image-button">
-    </div>
+        <a href="https://billetterie.lecargo.fr/evenement/24-05-2025-18-30-les-ond%C3%A9es-4-s" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/lesondees/billetterie_button.png" alt="Billetterie" id="image-button"  >
+        </a>
+
+  </div>
 </template>
 
 <script>
@@ -57,6 +60,9 @@ export default {
 }
 #image-button{
     width: 150px;
+    cursor: pointer;
+    position: relative;;
+    z-index: 10;
 }
 #cool-down{
     width: 150px;
@@ -65,5 +71,22 @@ export default {
     top: 20px;
     font-family: 'BlocHeavy';
     font-size: 0.9em;
+    z-index: 15;
+}
+
+@media (min-width: 770px) {
+    #button-ticketing{
+        top: 150px;
+        right: 50px;
+    }
+    #image-button {
+        width: 250px;
+
+    }
+    #cool-down{
+        top: 35px;
+        width: 250px;
+        font-size: 1.3em;
+    }
 }
 </style>

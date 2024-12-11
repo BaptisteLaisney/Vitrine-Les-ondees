@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <div id="first-part">
-      <img src="../assets/lesondees/logo_claim_typo_blanc.png" alt="" id ="logo-nav">
+        <img src="../assets/lesondees/logo_claim_typo_blanc.png" alt="" id ="logo-nav">
+
+
       <ButtonTicketing/>
 
       <video autoplay muted loop playsinline class="background custom-video">
@@ -18,7 +20,7 @@
 
     <div id="presentation-part">
       
-      <div class="line ">
+      <div class="line">
         <div class="presentation">
           <h1>Les Ondées passent<br>sur 2 jours !</h1>
           <p>
@@ -315,6 +317,14 @@ h2{
 
 
 @media (min-width: 770px) {
+
+    /** Header */
+    #logo-nav{
+      width: 250px;
+      top: 0px;
+      left: 20px;
+      
+    }
   .custom-video {
     height: 85vh;
 
@@ -324,10 +334,10 @@ h2{
     width: 200px;
   }
   /** Présentation */
-  .line h1{
+  .presentation h1, .presentation h2{
     font-size: 2.8rem;
     text-align: left;
-    padding-left:0px ;
+    padding:0px ;
   }
   .line{
     flex-direction: row;
@@ -348,6 +358,8 @@ h2{
   }
   .line h2 {
     display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   /**Artites */
@@ -373,6 +385,7 @@ h2{
     background-color: transparent;
     width: 23%;
   }
+
 }
 
 @media (min-width: 1200px ) {
