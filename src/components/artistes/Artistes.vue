@@ -7,9 +7,12 @@
             :artisteImage="artiste.image"
             :presentationFirst="artiste.presentationFirst"
             :presentationSecond="artiste.presentationSecond"
-            :songName="artiste.songName"
-            :songLink="artiste.songLink"
+            :songName1="artiste.songName1"
+            :songLink1="artiste.songLink1"
+            :songName2="artiste.songName2"
+            :songLink2="artiste.songLink2"
             :date="artiste.date"
+            :isReverse="artiste.isReverse"
         />
     </div>
 </template>
@@ -35,20 +38,6 @@ import artistesJSON from './artistes.json';
 </script>
 
 <style scoped>
-.wave-up, .wave-bottom{
-  position: relative;
-  min-height: 100px;
-  background-color: white;
-}
-.wave-up svg{
-  position: absolute;
-  bottom: -1px;
-  left : 0px
-}
-.wave-bottom svg{
-  position: absolute;
-  top: -1px;
-  left : 0px
-}
+
 
 </style>

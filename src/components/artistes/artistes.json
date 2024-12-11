@@ -5,9 +5,12 @@
         "image": "/src/assets/artistes/AJNA.jpeg",
         "presentationFirst": "La voix suave d’Ajna est reconnaissable entre mille. L’artiste se lance officiellement en 2022 avec son premier EP « L’HERMITE », suivi de deux projets la même année (« LE HOMA » et « SHERPA »).",
         "presentationSecond": "Il marque les esprits avec deux titres en particulier : « Ajcension » et « Paraffine » qui cumulent plus de 2 millions de streams chacun. Ajna continue son bout de chemin et dévoile en décembre dernier un projet plus complet : « Boys & Basement », Ce projet nous ramène au béton froid de l’Est parisien où seule la tentation de l’ivresse semble être l’échappatoire. Un concentré de productions énigmatiques qui nous prennent par surprise et enchantent nos balades nocturnes. Il y capture l’essence de sa ville pour en laisser un portrait cynique de sa vie. Le quotidien d’un brokeboi solitaire observant le chaos pour n’en tirer que des rêves de réussite. Pierre après pierre, Ajna construit son royaume en comptant définitivement s’inscrire dans les acteurs principaux de la nouvelle scène francophone.",
-        "songName": "Ajna - SunrizZ",
-        "songLink": "https://www.youtube.com/embed/dzu9dQZbfus",
-        "date": "23-05-2025"
+        "songName1": "Ajna - SunrizZ",
+        "songLink1": "https://www.youtube.com/embed/dzu9dQZbfus",
+        "songName2": "Ajna - novotel",
+        "songLink2": "https://www.youtube.com/embed/PT_7mRybiUE",
+        "date": "23-05-2025",
+        "isReverse": true
     },
     {
         "id": 2,
@@ -15,8 +18,11 @@
         "image": "/src/assets/artistes/THEODORA.jpg",
         "presentationFirst": "Theodora a pris son temps, mais elle est enfin prête à faire son retour. L’artiste revient avec son nouveau projet *Bad Boy Lovestory*, porté par le morceau viral *KONGOLESE SOUS BBL",
         "presentationSecond": "L’objectif est de proposer un véritable blockbuster créatif, capable de toucher un large public, tout en conservant l’originalité qui la caractérise. Theodora compte sur cet opus pour franchir une nouvelle étape notamment avec le morceau *FASHION DESIGNA* produit par Jonh Makabi (Aya Nakamura, Fally Ipupa). Un véritable hit qui résume la nouvelle Theodora, celle qui ose tout et souhaite faire dans la France. On retrouvera également sur le projet en compositeur Neon Valley (Disiz), Lasso/Koboi (Eddy de Pretto) ou encore Neophron (Luther) pour un projet riche en musicalité.",
-        "songName": "THEODORA - KONGOLESE SOUS BBL",
-        "songLink": "https://www.youtube.com/embed/d2tnwgcBfoA",
-        "date": "24-05-2025"
+        "songName1": "THEODORA - KONGOLESE SOUS BBL",
+        "songLink1": "https://www.youtube.com/embed/d2tnwgcBfoA",
+        "songName2": "THEODORA - JTM 1 PEU / MON CASQUE",
+        "songLink2": "https://www.youtube.com/embed/eDZM-tbEJbE",
+        "date": "24-05-2025",
+        "isReverse": false
     }
 ]

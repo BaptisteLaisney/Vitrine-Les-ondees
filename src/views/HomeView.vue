@@ -339,6 +339,11 @@ h2{
     display: block;
   }
 
+  /**Artites */
+  .artistes{
+    margin-top: 100px;
+  }
+
 }
 
 @media (min-width: 1200px ) {

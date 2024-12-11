@@ -104,4 +104,16 @@ export default {
     height: auto;
     display: block;
 }
+
+@media (min-width: 770px ) {
+    .photo{
+        aspect-ratio: 16 / 9;
+    }
+}
+@media (min-width: 1200px ) {
+
+}
+
+@media (min-width:1360px ) {
+}
 </style>
