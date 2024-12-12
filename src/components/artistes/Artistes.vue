@@ -25,21 +25,24 @@
 <script>
 import Artiste from './Artiste.vue';
 import artistesJSON from './artistes.json';
+import artistesJSONOne from './artistesOne.json';
+export default {
+    components: {
+        Artiste
+    },
+    setup() {
+        // Heure cible : 17h (UTC+1) le 12 décembre 2024
+        const targetDate = new Date('2024-12-12T17:00:00+01:00');
+        const now = new Date();
 
-    export default {
-        components:{
-            Artiste
-        },
-        setup (){
-        const artistesList = artistesJSON;
-        
+        // Choisir le fichier JSON en fonction de l'heure actuelle
+        const artistesList = now >= targetDate ? artistesJSON : artistesJSONOne;
+
         return {
             artistesList,
         };
     }
-
-
-    }
+};
 </script>
 
 <style scoped>

@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "AJNA",
+        "image": "/src/assets/artistes/AJNA.jpeg",
+        "presentationFirst": "Lancé officiellement en 2022, Ajna compte s’inscire dans les acteurs principaux de la nouvelle scène francophone. Avec cette voix suave reconnaissable entre mille, l’artiste marque les esprits au fil des projets partagés. Le dernier en date, “Boys & Basement” nous ramène au béton froid de l’Est parisien où seule la tentation de l’ivresse semble être l’échappatoire.",
+        "presentationSecond": "Il marque les esprits avec deux titres en particulier : « Ajcension » et « Paraffine » qui cumulent plus de 2 millions de streams chacun. Ajna continue son bout de chemin et dévoile en décembre dernier un projet plus complet : « Boys & Basement », Ce projet nous ramène au béton froid de l’Est parisien où seule la tentation de l’ivresse semble être l’échappatoire. Un concentré de productions énigmatiques qui nous prennent par surprise et enchantent nos balades nocturnes. Il y capture l’essence de sa ville pour en laisser un portrait cynique de sa vie. Le quotidien d’un brokeboi solitaire observant le chaos pour n’en tirer que des rêves de réussite. Pierre après pierre, Ajna construit son royaume en comptant définitivement s’inscrire dans les acteurs principaux de la nouvelle scène francophone.",
+        "songName1": "Ajna - SunrizZ",
+        "songLink1": "https://www.youtube.com/embed/dzu9dQZbfus",
+        "songName2": "Ajna - novotel",
+        "songLink2": "https://www.youtube.com/embed/PT_7mRybiUE",
+        "date": "23-05-2025",
+        "day": "Vendredi 23 Mai 2025",
+        "isReverse": false,
+        "isDateVisible" : true,
+        "instagram": "https://www.instagram.com/ajnadontsleep",
+        "spotify": "https://open.spotify.com/intl-fr/artist/3tMXAn9bB1GcLfPaukbrSS?si=6nLYZ40YRJSoAodlwrR08Q",
+        "deezer": "https://www.deezer.com/fr/artist/1197134"
+        
+    }
+]
