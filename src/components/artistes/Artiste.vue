@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="second-part">
-            <div class="video-1">
+            <div class="video video-1">
                 <h4>
                     {{ songName1 }}
                 </h4>
@@ -57,7 +57,7 @@
                     </iframe>
                 </div>
             </div>
-            <div class="video-2">
+            <div class="video video-2">
                 <h4>
                     {{ songName2 }}
                 </h4>
@@ -333,8 +333,10 @@ h4{
         flex-direction: row;
     }
     h4{
-        padding: 10px 50px 10px 50px;
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+    .video-2 h4{
+        padding: 40px 50px 20px 50px;
     }
 
     .artiste.reverse {

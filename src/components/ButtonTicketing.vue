@@ -5,7 +5,7 @@
                 {{ countdown }}
             </span>
         </div>
-        <a href="https://billetterie.lecargo.fr/evenement/24-05-2025-18-30-les-ond%C3%A9es-4-s" target="_blank" rel="noopener noreferrer">
+        <a href="https://billetterie.lecargo.fr/evenement/23-05-2025-18-30-les-ond%C3%A9es-4" target="_blank" rel="noopener noreferrer">
             <img src="../assets/lesondees/billetterie_button.png" alt="Billetterie" id="image-button"  >
         </a>
 
