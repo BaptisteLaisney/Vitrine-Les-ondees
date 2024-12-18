@@ -1,7 +1,7 @@
 <template>
     <div id="partners">
         <div class="partner" v-for="item in itemList" :key="item.id">
-            <img  :src="`/src/assets/partners/${item.name}`"/>
+            <img  :src="`/partners/${item.name}`"/>
         </div>
     </div>
 </template>

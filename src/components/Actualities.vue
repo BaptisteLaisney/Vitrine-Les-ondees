@@ -2,7 +2,7 @@
     <div id="actualities">
         <div class="actuality" v-for="item in itemList" :key="item.id">
                         <a :href="item.link" target="_blank" rel="noopener noreferrer">
-                            <img  :src="`/src/assets/actualities/${item.name}`"/>
+                            <img  :src="`/actualities/${item.name}`"/>
             </a>
         </div>
     </div>

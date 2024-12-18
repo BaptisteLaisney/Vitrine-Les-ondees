@@ -2,8 +2,8 @@
     {
         "id": 3,
         "name": "THEODORA",
-        "image": "/src/assets/artistes/THEODORA.jpg",
-        "presentationFirst": "Theodora a pris son temps, mais elle est enfin prête à faire son retour. L’artiste revient avec son nouveau projet *Bad Boy Lovestory*, porté par le morceau viral *KONGOLESE SOUS BBL",
+        "image": "/artistes/THEODORA.jpg",
+        "presentationFirst": "Theodora a pris son temps, mais elle est enfin prête à faire son retour. L’artiste revient avec son nouveau projet *Bad Boy Lovestory*, porté par le morceau viral *KONGOLESE SOUS BBL*",
         "presentationSecond": "L’objectif est de proposer un véritable blockbuster créatif, capable de toucher un large public, tout en conservant l’originalité qui la caractérise. Theodora compte sur cet opus pour franchir une nouvelle étape notamment avec le morceau *FASHION DESIGNA* produit par Jonh Makabi (Aya Nakamura, Fally Ipupa). Un véritable hit qui résume la nouvelle Theodora, celle qui ose tout et souhaite faire dans la France. On retrouvera également sur le projet en compositeur Neon Valley (Disiz), Lasso/Koboi (Eddy de Pretto) ou encore Neophron (Luther) pour un projet riche en musicalité.",
         "songName1": "THEODORA - KONGOLESE SOUS BBL",
         "songLink1": "https://www.youtube.com/embed/d2tnwgcBfoA",
@@ -20,8 +20,8 @@
     {
         "id": 1,
         "name": "AJNA",
-        "image": "/src/assets/artistes/AJNA.jpeg",
-        "presentationFirst": "Lancé officiellement en 2022, Ajna compte s’inscire dans les acteurs principaux de la nouvelle scène francophone. Avec cette voix suave reconnaissable entre mille, l’artiste marque les esprits au fil des projets partagés. Le dernier en date, “Boys & Basement” nous ramène au béton froid de l’Est parisien où seule la tentation de l’ivresse semble être l’échappatoire.",
+        "image": "/artistes/AJNA.jpeg",
+        "presentationFirst": "Lancé officiellement en 2022, Ajna compte s’inscrire dans les acteurs principaux de la nouvelle scène francophone. Avec cette voix suave reconnaissable entre mille, l’artiste marque les esprits au fil des projets partagés. Le dernier en date, “Boys & Basement” nous ramène au béton froid de l’Est parisien où seule la tentation de l’ivresse semble être l’échappatoire.",
         "presentationSecond": "Il marque les esprits avec deux titres en particulier : « Ajcension » et « Paraffine » qui cumulent plus de 2 millions de streams chacun. Ajna continue son bout de chemin et dévoile en décembre dernier un projet plus complet : « Boys & Basement », Ce projet nous ramène au béton froid de l’Est parisien où seule la tentation de l’ivresse semble être l’échappatoire. Un concentré de productions énigmatiques qui nous prennent par surprise et enchantent nos balades nocturnes. Il y capture l’essence de sa ville pour en laisser un portrait cynique de sa vie. Le quotidien d’un brokeboi solitaire observant le chaos pour n’en tirer que des rêves de réussite. Pierre après pierre, Ajna construit son royaume en comptant définitivement s’inscrire dans les acteurs principaux de la nouvelle scène francophone.",
         "songName1": "Ajna - SunrizZ",
         "songLink1": "https://www.youtube.com/embed/dzu9dQZbfus",
@@ -35,5 +35,23 @@
         "spotify": "https://open.spotify.com/intl-fr/artist/3tMXAn9bB1GcLfPaukbrSS?si=6nLYZ40YRJSoAodlwrR08Q",
         "deezer": "https://www.deezer.com/fr/artist/1197134"
         
+    },
+    {
+        "id": 2,
+        "name": "DANYL",
+        "image": "/artistes/DANYL.jpg",
+        "presentationFirst": "Autodidacte, Danyl a commencé très tôt les productions pour lui comme pour les autres. Auteur, compositeur et beatmaker, il fait partie des premiers artistes à créer des morceaux en live sur la plateforme Twitch. Danyl est franco-algérien et puise dans les sonorités raï pour construire son univers musical. Inspiré par sa double culture et la modernité de son époque, il sort des sons qu’il rassemble sous le nom de Khedma (le travail en arabe). ",
+        "presentationSecond":"",
+        "songName1": "Danyl - Mazel",
+        "songLink1": "https://www.youtube.com/embed/mrbtdeY36_E",
+        "songName2": "Danyl - Bledi mon amour",
+        "songLink2": "https://www.youtube.com/embed/QUcYMf-QuJQ",
+        "date": "23-05-2025",
+        "day": "Vendredi 23 Mai 2025",
+        "isReverse": true,
+        "isDateVisible" : false,
+        "instagram": "https://www.instagram.com/danylchulo/",
+        "spotify": "https://open.spotify.com/artist/5Hq9W3lm1N9KRCf35RBMab?si=YEKSMEXFTm2qINtUDkWzig",
+        "deezer": "https://www.deezer.com/fr/artist/75818912"
     }
 ]

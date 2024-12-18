@@ -32,7 +32,7 @@ export default {
     },
     setup() {
         // Heure cible : 17h (UTC+1) le 12 décembre 2024
-        const targetDate = new Date('2024-12-12T17:00:00+01:00');
+        const targetDate = new Date('2024-12-12T18:00:00+01:00');
         const now = new Date();
 
         // Choisir le fichier JSON en fonction de l'heure actuelle

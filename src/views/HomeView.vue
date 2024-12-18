@@ -4,8 +4,8 @@
         <img src="../assets/lesondees/logo_claim_typo_blanc.png" alt="" id ="logo-nav">
       <ButtonTicketing/>
 
-      <video autoplay muted loop playsinline class="background custom-video">
-        <source src="../assets/videos/After_movie.mp4" type="video/mp4" />
+      <video autoplay muted loop playsinline class="background custom-video" preload="auto">
+        <source src="../assets/videos/After_movie.mov" type="video/mp4" />
         Votre navigateur ne supporte pas les vidéos HTML5.
       </video>
       <div class="wave-up">
@@ -22,13 +22,13 @@
         <div class="presentation">
           <h1>Les Ondées passent<br>sur 2 jours !</h1>
           <p>
-            <strong> Les Ondées reviennent au Cargö les vendredi 23 et samedi 24 mai 2025</strong> ! Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passent la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
+            <strong> Les Ondées reviennent au Cargö les vendredi 23 et samedi 24 mai 2025</strong> ! Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passe la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
           </p>
         </div>
-        <img src="../assets/photos-selection/Spider Zed 3 (c)Lukastivecrea.jpeg" alt="">
+        <img src="/photos-selection/Spider Zed 3 (c)Lukastivecrea.jpeg" alt="">
       </div>
       <div class="line">
-        <img src="../assets/photos-selection/(c) @nath_pics 3.jpg" alt="">
+        <img src="/photos-selection/(c) nath_pics 3.jpg" alt="">
         <div class="presentation">
           <h2>Le rendez-vous caennais !</h2>
           <p>
@@ -42,14 +42,14 @@
     <div class="artistes">
       <Artistes/>
     </div>
-    <div id="photos-part">
+    <!-- <div id="photos-part">
       <h2>Nos photos</h2>
       <Photos/>
-      <!-- <div id="voir-plus">
+       <div id="voir-plus">
         voir plus...
-      </div> -->
+      </div> 
 
-    </div>
+    </div> -->
 
     <div id="actualities-part">
       <div class="wave-bottom">

@@ -1,7 +1,7 @@
 <template>
     <div id="photos">
         <div class="photo" v-for="item in itemList" :key="item.id">
-            <img  :src="`/src/assets/photos-selection/${item.name}`"    @click="openModal(`/src/assets/photos-selection/${item.name}`)"  />
+            <img  :src="`/photos-selection/${item.name}`"    @click="openModal(`/src/assets/photos-selection/${item.name}`)"  />
         </div>
          <!-- Modal Overlay -->
                 <div 
@@ -31,9 +31,9 @@ export default {
         }
         function getItemList() {
         return [
-            { id: 1, name: '(c) @nath_pics 1.jpeg' },
-            { id: 2, name: '(c) @nath_pics 2.png' },
-            { id: 3, name: '(c) @nath_pics 3.jpg' },
+            { id: 1, name: '(c) nath_pics 1.jpeg' },
+            { id: 2, name: '(c) nath_pics 2.png' },
+            { id: 3, name: '(c) nath_pics 3.jpg' },
             { id: 4, name: 'bb-jacques-public-ondees-23-gregory-forestier.jpeg' },
             { id: 5, name: 'bro-ondees-23-gregory-forestier.jpeg' },
             { id: 6, name: 'esam-ondees-23-gregory-forestier.jpeg' },
