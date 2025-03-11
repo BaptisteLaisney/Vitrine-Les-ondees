@@ -4,9 +4,20 @@
       <div :class="menuOpen ? 'line open' : 'line'"></div>
       <div :class="menuOpen ? 'line open' : 'line'"></div>
     </div>
+    <nav class="menu-line" @click="">
+      <ul>
+        <li class="menu-item"><a href="#">Accueil</a></li>
+        <li class="menu-item"><a href="#">Édition 2025</a></li>
+        <li class="menu-item"><a href="#">À propos</a></li>
+        <li class="menu-item"><a href="#">Partenaires</a></li>
+        <li class="menu-item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
 
     <div v-if="menuOpen" class="menu">
-      <ul>
+      <div class="menu-items">
+        <ul>
         <li><a href="#">Accueil</a></li>
         <li><a href="#">Édition 2025</a></li>
         <li><a href="#">Billetterie</a></li>
@@ -14,8 +25,10 @@
         <li><a href="#">Partenaires</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+      <img src="../assets/menu/nos_reseaux.png" alt="Nos réseaux" id="our-social-network">
+      </div>
+
       <div class="social-media">
-        <p>Nos réseaux</p>
         <div class="icons">
           <a
             href="https://www.facebook.com/lesondees"
@@ -91,6 +104,39 @@ export default {
   z-index: 1000;
 }
 
+#our-social-network{
+  width: 200px;
+  margin-top: 50px;
+  text-align: start;
+}
+.menu-line {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-item {
+  margin: 0 20px;
+  font-family: 'BlocHeavy';
+  font-size: 1.7rem;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .line {
   width: 30px;
   height: 4px;
@@ -113,23 +159,33 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   z-index: 999;
+}
+
+.menu-items{
+  padding-left: 50px;
 }
 
 .menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .menu ul li {
-  margin: 20px 0;
+  margin: 10px 0;
+  font-family: 'BlocHeavy';
+}
+.menu ul li a {
+  font-size: 2rem;
 }
 
-.menu ul li a {
+a {
   text-decoration: none;
-  font-size: 1.5rem;
   font-weight: bold;
   color: white;
 }
@@ -152,5 +208,16 @@ export default {
 .icons img {
   width: 30px;
   height: 30px;
+}
+
+@media (min-width: 770px) {
+  .menu-icon {
+    display: none;
+  }
+  .menu-line {
+    display: flex;
+  }
+
+
 }
 </style>
