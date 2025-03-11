@@ -10,11 +10,24 @@ export default {
     setup () {
         function getItemList() {
         return [
-            { id: 1, name: 'CVEC.png' },
-            { id: 2, name: 'unicaen.png' },
-            { id: 3, name: 'CROUS.jpeg' },
-            { id: 4, name: 'Logo-Le-Renard-Portrait_1.jpg' },
-            { id: 5, name: 'IUT.png' },
+        { id: 1, name: 'unicaen.png' },
+        { id: 2, name: 'CROUS.jpeg' },
+            { id: 3, name: 'CVEC.png' },
+            { id: 4, name: 'IUT.png' }, 
+            { id: 5, name: 'caen.jpg' }, 
+            { id: 6, name: 'calvados.gif' }, 
+            { id: 7, name: 'twisto.png' },
+            { id: 8, name: 'Logo-Le-Renard-Portrait_1.jpg' },
+            { id: 9, name: 'cesi.jpg' },
+            { id: 9, name: 'the_people.png' },
+            
+            { id: 10, name: 'hello_caen.jpeg' },
+            { id: 11, name: 'cercle_vertueux.jpg' },
+            { id: 12, name: 'le_cargo.png' },
+            
+            
+            
+            
         ];
         }
         const itemList = getItemList();

@@ -62,7 +62,8 @@
                     {{ songName2 }}
                 </h4>
             <!-- Video Embed -->
-                <div class="video-container">
+
+                <div class="video-container" v-if="songLink2 != null">
                     <iframe
                         class="clip" 
                         :src="songLink2" 

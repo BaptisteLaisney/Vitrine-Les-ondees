@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <div id="first-part">
+      
         <img src="../assets/lesondees/logo_claim_typo_blanc.png" alt="" id ="logo-nav">
       <ButtonTicketing/>
 
@@ -15,6 +16,8 @@
       </div>
       
     </div>
+
+    
 
     <div id="presentation-part">
       
@@ -37,27 +40,8 @@
         </div>
 
       </div>
-      <div class="line">
-        <div class="presentation">
-          <h2 id="title-off">
-            Romsii et Juhan débarquent au Off des Ondées ! <br></h2>
-          <p>
-            <br>
-            Les Ondées lancent les festivités le 30 Janvier à la MDE avec une <b>soirée musicale gratuite</b>, l’occasion de découvrir de nouveaux artistes locaux.<br><br>
-            <strong>Romsii <a href="https://www.instagram.com/girlsloveromsii/" target="_blank" class="instagram-artites-off"><i>(@girlsloveromsii)</i></a></strong> Des sons frais, un flow léger et un second degré bien assumé : Romsii t’emmène dans son univers unique.<br><br>
-            <strong>Juhan <a href="https://www.instagram.com/leojuhan/" target="_blank" class="instagram-artites-off"><i>(@leojuhan)</i></a></strong> Mêlant douceur et intensité, Juhan fusionne ses racines caennaises avec une énergie cosmopolite.<br><br>
-          </p>
-          <div class="billetterie-off-part">
-            <a href="https://bit.ly/4abfOsh" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/lesondees/billetterie_button_only.png" alt="Billetterie" id="image-les-ondees-button">
-            </a>
-            <p><i>Places gratuites (limitées)</i></p>
-          </div>
-        </div>
-        <img src="/photos-selection/off-les-ondees.png" id="affiche-off" alt="Affiche Le off des ondées Romsii et Juhan le 30 janvier 2025, Ouverture des portes à 20h">
-      </div>
     </div>
-    <h2>Les premiers noms</h2>
+    <h2>La programmation complète</h2>
     <div class="artistes">
       <Artistes/>
     </div>
