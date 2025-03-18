@@ -46,6 +46,7 @@ export default {
     gap: 10px;
     justify-content: space-around;
     margin: auto;
+    background-color: white;
 }
 
 .partner {
@@ -63,9 +64,6 @@ export default {
     display: block;
 }
 @media (min-width: 770px) {
-    #partners {
-        width: 70%;
-    }
     .partner {
         width: 20%; 
     }

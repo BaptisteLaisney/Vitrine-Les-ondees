@@ -16,7 +16,20 @@
       </div>
       
     </div>
-
+    <div id="artistes-summary-part">
+      <router-link to="/artistes" id="nav-artistes-button">
+        <p id="dates-artistes">
+          23 & 24 Mai 
+        </p>
+        <img src="../assets/lesondees/all_artistes.png" alt="Artistes clickable pour voir la programmation">
+        <p id="summary-artistes">
+          Théodora, Edge, Ajna... Voir toute la programmation ! 
+        </p>
+      </router-link>
+    
+      
+    </div>
+    
     
 
     <div id="presentation-part">
@@ -28,7 +41,7 @@
             <strong> Les Ondées reviennent au Cargö les vendredi 23 et samedi 24 mai 2025</strong> ! Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passe la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
           </p>
         </div>
-        <img src="/photos-selection/Spider Zed 3 (c)Lukastivecrea.jpeg" alt="">
+        <img src="/photos-selection/Spider Zed 3 (c)Lukastivecrea Border.png" alt="">
       </div>
       <div class="line">
         <img src="/photos-selection/(c) nath_pics 3.jpg" alt="">
@@ -40,10 +53,6 @@
         </div>
 
       </div>
-    </div>
-    <h2>La programmation complète</h2>
-    <div class="artistes">
-      <Artistes/>
     </div>
     <!-- <div id="photos-part">
       <h2>Nos photos</h2>
@@ -190,27 +199,39 @@ export default {
   display: block;
   padding: 30px;
 }
-/** Les off des ondées */
-.billetterie-off-part{
+
+/** Artistes Nav */
+
+#artistes-summary-part {
+  width: 100%;
+  margin: 20px 0px 5cap 0px;
+  text-align: center;
+  position: relative;
   display: flex;
-  align-items: center;
-}
-#image-les-ondees-button{
-  padding: 0;
-  display: block;
-  width: 200px;
-}
-.billetterie-off-part p {
-  white-space: nowrap;
+  justify-content: center;
+  font-family: 'BlocHeavy';
+  font-size: 1.4rem;
 }
 
-.instagram-artites-off{
+#nav-artistes-button {
+  cursor: pointer;
+  width: 70%;
+  transition: transform 0.3s ease-in-out;
+}
+#nav-artistes-button img {
+  width: 100%;
+}
+
+#nav-artistes-button:hover {
+  transform: scale(1.1);
+}
+
+#summary-artistes{
   color: white;
 }
-.line #affiche-off{
-    display: block;
-    width: 100%;
-    
+
+#dates-artistes{
+  color: rgba(255, 255, 255, 0.522);
 }
 /* Présentation part */
 

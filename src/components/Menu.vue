@@ -4,27 +4,26 @@
       <div :class="menuOpen ? 'line open' : 'line'"></div>
       <div :class="menuOpen ? 'line open' : 'line'"></div>
     </div>
-    <nav class="menu-line" @click="">
-      <ul>
-        <li class="menu-item"><a href="#">Accueil</a></li>
-        <li class="menu-item"><a href="#">Édition 2025</a></li>
-        <li class="menu-item"><a href="#">À propos</a></li>
-        <li class="menu-item"><a href="#">Partenaires</a></li>
-        <li class="menu-item"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <nav class="menu-line">
+    <ul>
+      <li class="menu-item"><router-link to="/">Accueil</router-link></li>
+      <li class="menu-item"><router-link to="/programmation">Programmation</router-link></li>
+      <li class="menu-item"><router-link to="/a-propos">À propos</router-link></li>
+      <li class="menu-item"><router-link to="/partenaires">Partenaires</router-link></li>
+      <li class="menu-item"><router-link to="/contact">Contact</router-link></li>
+    </ul>
+  </nav>
 
 
     <div v-if="menuOpen" class="menu">
       <div class="menu-items">
         <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Édition 2025</a></li>
-        <li><a href="#">Billetterie</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Partenaires</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+          <li class="menu-item"><router-link to="/">Accueil</router-link></li>
+          <li class="menu-item"><router-link to="/programmation">Programmation</router-link></li>
+          <li class="menu-item"><router-link to="/a-propos">À propos</router-link></li>
+          <li class="menu-item"><router-link to="/partenaires">Partenaires</router-link></li>
+          <li class="menu-item"><router-link to="/contact">Contact</router-link></li>
+        </ul>
       <img src="../assets/menu/nos_reseaux.png" alt="Nos réseaux" id="our-social-network">
       </div>
 
