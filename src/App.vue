@@ -24,10 +24,7 @@ body {
 }
 
 #lesondees {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color: rebeccapurple;
   margin: auto;
 }
 </style>

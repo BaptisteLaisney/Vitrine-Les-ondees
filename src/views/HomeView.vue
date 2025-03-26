@@ -17,7 +17,7 @@
       
     </div>
     <div id="artistes-summary-part">
-      <router-link to="/artistes" id="nav-artistes-button">
+      <router-link to="/programmation" id="nav-artistes-button">
         <p id="dates-artistes">
           23 & 24 Mai 
         </p>
@@ -34,17 +34,18 @@
 
     <div id="presentation-part">
       
-      <div class="line">
+      <div class="side side-left">
         <div class="presentation">
           <h1>Les Ondées passent<br>sur 2 jours !</h1>
           <p>
-            <strong> Les Ondées reviennent au Cargö les vendredi 23 et samedi 24 mai 2025</strong> ! Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passe la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
+            <strong> Les Ondées reviennent au Cargö les vendredi 23 et samedi 24 mai 2025</strong> ! <br>Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passe la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
           </p>
         </div>
         <img src="/photos-selection/Spider Zed 3 (c)Lukastivecrea Border.png" alt="">
       </div>
-      <div class="line">
-        <img src="/photos-selection/(c) nath_pics 3.jpg" alt="">
+      <div class="side side-right">
+        <!-- <img src="/photos-selection/(c) nath_pics 3.jpg" alt=""> -->
+        <img src="/photos-selection/Spider Zed 3 (c)Lukastivecrea Border.png" alt="">
         <div class="presentation">
           <h2>Le rendez-vous caennais !</h2>
           <p>
@@ -66,7 +67,7 @@
     <div id="actualities-part">
       <div class="wave-bottom">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,160C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-            </div>
+      </div>
 
 
       <h2>Nos actualités</h2>
@@ -76,7 +77,6 @@
 
       <div id="title-partners">
         <div class="wave-up">
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0000000" fill-opacity="1" d="M0,160L60,170.7C120,181,240,203,360,224C480,245,600,267,720,256C840,245,960,203,1080,197.3C1200,192,1320,224,1380,240L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> -->
         
           <svg  viewBox="0 0 1728 59" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1740 7.17298C1740 7.17298 1613.14 18.6765 1531.37 19.2015C1439.35 19.7922 1388.28 10.6553 1296.4 7.17298C1123.4 0.616306 1026 -1.81703 852.795 1.43211C676.751 4.73458 579.213 22.773 403.116 24.3956C244.784 25.8545 -2 12.9138 -2 12.9138V58.8407H1740V7.17298Z" fill="black"/>
@@ -235,7 +235,7 @@ export default {
 }
 /* Présentation part */
 
-.line{
+.side{
   display: flex;
   flex-direction: column;
   background-color: #E86B2A;
@@ -246,14 +246,14 @@ export default {
 
 }
 
-.line h2 {
+.side h2 {
   display: none;
 }
 #title-off{
   display: block;
 }
 
-.line img{
+.side img{
   display: none;
   height: auto;
 }
@@ -382,34 +382,51 @@ h2{
     width: 200px;
   }
   /** Présentation */
+
+  #presentation-part{
+    display: flex;
+    position: relative;
+    padding: 50px;
+  }
   .presentation h1, .presentation h2{
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     text-align: left;
     padding:0px ;
   }
-  .line{
-    flex-direction: row;
-    margin-left: 30px;
+  .side{
+    
+    flex-direction: column;
     padding: 20px;
-
-  }
-  .line .presentation{
-    margin: 0px;
     width: 50%;
+    position: relative;
+    justify-content:start;
+
 
   }
-  .line img{
+  .side-left{
+    flex-direction: column-reverse;
+
+  }
+  .side .presentation{
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 0.8rem;
+
+  }
+  .side img{
     display: block;
-    padding: 5%;
-    width: 40%;
+
+    width: 100%;
 
   }
-  .line h2 {
+
+  .side h2 {
     display: block;
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .line #affiche-off{
+
+  .side #affiche-off{
     display: block;
     padding: 5%;
     width: 40%;
