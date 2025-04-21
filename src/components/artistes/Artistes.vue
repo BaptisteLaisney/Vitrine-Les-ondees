@@ -1,6 +1,9 @@
 <template>
-    <div id="artistes">
-        <Artiste class="artiste"
+    <div class="artistes">
+        <div class="wave-up">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,165.3C160,171,320,181,480,197.3C640,213,800,235,960,218.7C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+        </div>
+        <Artiste class="artiste" :id="'artiste-' + artiste.id"
             v-for="artiste in artistesList" 
             :key="artiste.id" 
             :artisteName="artiste.name"
@@ -43,11 +46,32 @@ export default {
         return {
             artistesList,
         };
-    }
+    },
+    methods: {
+        scrollToArtiste(artisteId) {
+            const element = document.getElementById(`artiste-${artisteId}`)
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' })
+            }
+        }
+  }
 };
 </script>
 
 <style scoped>
-
-
+.artistes{
+    background-color:#E86B2A ;
+}
+.wave-up{
+    background-color: white;
+  position: relative;
+  width: 100%;
+  padding: 6% 0% 6% 0%;
+  background-color: white;
+}
+.wave-up svg{
+  position: absolute;
+  bottom: -1px;
+  left : 0px
+}
 </style>

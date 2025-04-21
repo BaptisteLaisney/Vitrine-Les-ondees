@@ -8,9 +8,9 @@
     <ul>
       <li class="menu-item"><router-link to="/">Accueil</router-link></li>
       <li class="menu-item"><router-link to="/programmation">Programmation</router-link></li>
-      <li class="menu-item"><router-link to="/a-propos">À propos</router-link></li>
+      <!-- <li class="menu-item"><router-link to="/a-propos">À propos</router-link></li> -->
       <li class="menu-item"><router-link to="/partenaires">Partenaires</router-link></li>
-      <li class="menu-item"><router-link to="/contact">Contact</router-link></li>
+      <!-- <li class="menu-item"><router-link to="/contacts">Contacts</router-link></li> -->
     </ul>
   </nav>
 
@@ -18,11 +18,11 @@
     <div v-if="menuOpen" class="menu">
       <div class="menu-items">
         <ul>
-          <li class="menu-item"><router-link to="/">Accueil</router-link></li>
-          <li class="menu-item"><router-link to="/programmation">Programmation</router-link></li>
-          <li class="menu-item"><router-link to="/a-propos">À propos</router-link></li>
-          <li class="menu-item"><router-link to="/partenaires">Partenaires</router-link></li>
-          <li class="menu-item"><router-link to="/contact">Contact</router-link></li>
+          <li class="menu-item"><router-link to="/" @click="closeMenu">Accueil</router-link></li>
+          <li class="menu-item"><router-link to="/programmation" @click="closeMenu">Programmation</router-link></li>
+          <!-- <li class="menu-item"><router-link to="/a-propos" @click="closeMenu">À propos</router-link></li> -->
+          <li class="menu-item"><router-link to="/partenaires" @click="closeMenu">Partenaires</router-link></li>
+          <!-- <li class="menu-item"><router-link to="/contacts" @click="closeMenu">Contacts</router-link></li> -->
         </ul>
       <img src="../assets/menu/nos_reseaux.png" alt="Nos réseaux" id="our-social-network">
       </div>
@@ -86,13 +86,29 @@ export default {
       menuOpen: false,
     };
   },
+  mounted() {
+    const items = document.querySelectorAll('.menu-item');
+    items.forEach(item => {
+      item.addEventListener('click', this.closeMenu);
+    });
+  },
+  beforeDestroy() {
+    const items = document.querySelectorAll('.menu-item');
+    items.forEach(item => {
+      item.removeEventListener('click', this.closeMenu);
+    });
+  },
   methods: {
     toggleMenu() {
       this.menuOpen = !this.menuOpen;
     },
-  },
+    closeMenu() {
+      this.menuOpen = false;
+    }
+  }
 };
 </script>
+
 
 <style scoped>
 .menu-icon {

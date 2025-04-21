@@ -94,6 +94,7 @@
         <ButtonCTA buttonText="Devenir partenaire" @someEvent="goToPartners" />
       </div>
     </div>
+    <ThePeopleCode/>
     <div id="bottom-part">
       <img src="../assets/lesondees/bottom_image.png" alt="" class="background">
       <div class="social-medias">
@@ -128,6 +129,7 @@ import Photos from '../components/Photos.vue';
 import ButtonCTA from '../components/shared/ButtonCTA.vue';
 import Artistes from '../components/artistes/Artistes.vue';
 import ButtonTicketing from '../components/ButtonTicketing.vue';
+import ThePeopleCode from '../components/partners/ThePeopleCode.vue';
 export default {
   components:{
     Photos,
@@ -135,7 +137,8 @@ export default {
     Partners,
     ButtonCTA,
     Artistes,
-    ButtonTicketing
+    ButtonTicketing,
+    ThePeopleCode
   },
   data() {
     return {

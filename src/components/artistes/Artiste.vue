@@ -232,7 +232,6 @@ h4{
 .wave-up svg{
   position: absolute;
   bottom: -1px;
-  
   left : 0px
 }
 .wave-bottom svg{
