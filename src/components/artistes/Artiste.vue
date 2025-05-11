@@ -1,21 +1,12 @@
 <template>
     <div id="artiste" :class="['artiste', { reverse: isReverse }]">
         <div :class="['date', { visible: isDateVisible }]">
-            <div class="wave-bottom">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,160C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-            </div>
             <h4 >{{ date }}</h4>
-            <div class="wave-up">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,165.3C160,171,320,181,480,197.3C640,213,800,235,960,218.7C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-            </div>
         </div>
 
         <div class="first-part">
             <div class="artiste-image">
                 <img :src="artisteImage" alt="Artiste Image">
-                <div class="wave-bottom">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,133.3C160,107,320,53,480,58.7C640,64,800,128,960,144C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-                </div>
             </div>
             <div class="content">
                 <h3>{{ artisteName }}</h3>
@@ -45,41 +36,21 @@
                     {{ songName1 }}
                 </h4>
             <!-- Video Embed -->
-                <div class="video-container">
-                    <iframe
-                        class="clip" 
-                        :src="songLink1" 
-                        :title="songName1" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
+            <ArtisteVideoWithBorder class="video-container" :songName="songName1" :songLink="songLink1"/>
             </div>
             <div class="video video-2">
                 <h4>
                     {{ songName2 }}
                 </h4>
             <!-- Video Embed -->
-
-                <div class="video-container" v-if="songLink2 != null">
-                    <iframe
-                        class="clip" 
-                        :src="songLink2" 
-                        :title="songName2" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
+            <ArtisteVideoWithBorder class="video-container" :songName="songName2" :songLink="songLink2" v-if="songLink2 != null"/>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import ArtisteVideoWithBorder from './ArtisteVideoWithBorder.vue'
     export default {
     props: {
         artisteName: {
@@ -130,7 +101,10 @@
             type: String
         }
         
-    }  
+    },  
+    components: {
+        ArtisteVideoWithBorder
+    }
     }
 </script>
 
@@ -143,7 +117,6 @@
 .artiste-image {
     flex: 0 0 auto; /* Prevents items from shrinking and allows horizontal alignment */
     width: 100%; /* Set a fixed width for each item to control size */
-    aspect-ratio: 4 / 3; /* Aspect ratio for images */
     position: relative;
 }
 
@@ -218,8 +191,9 @@ h4{
     padding: 0px 20px 0px 0px;
 }
 .date{
-    background-color: white;
-    color: #E86B2A;
+    background-color: #e74a81;
+    color: white;
+    margin: 20px 0px;
 }
 /** Wave */
 
@@ -285,7 +259,6 @@ h4{
         flex-direction: row;
     }
     .artiste-image {
-        aspect-ratio: 16 / 9; /* Aspect ratio for images */
         position: relative;
     }
     .wave-bottom svg{
@@ -303,7 +276,8 @@ h4{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        width: 100%;
+
     }
     .social-medias{
         /* padding: 40px 0px 0px 0px; */

@@ -2,11 +2,11 @@
     {
         "id": 3,
         "name": "THEODORA",
-        "image": "/artistes/THEODORA.jpg",
+        "image": "/artistes-border/THEODORA.png",
         "presentationFirst": "Theodora a pris son temps, mais elle est enfin prête à faire son retour. L’artiste revient avec son nouveau projet *Bad Boy Lovestory*, porté par le morceau viral *KONGOLESE SOUS BBL*",
         "presentationSecond": "L’objectif est de proposer un véritable blockbuster créatif, capable de toucher un large public, tout en conservant l’originalité qui la caractérise. Theodora compte sur cet opus pour franchir une nouvelle étape notamment avec le morceau *FASHION DESIGNA* produit par Jonh Makabi (Aya Nakamura, Fally Ipupa). Un véritable hit qui résume la nouvelle Theodora, celle qui ose tout et souhaite faire dans la France. On retrouvera également sur le projet en compositeur Neon Valley (Disiz), Lasso/Koboi (Eddy de Pretto) ou encore Neophron (Luther) pour un projet riche en musicalité.",
         "songName1": "THEODORA - KONGOLESE SOUS BBL",
-        "songLink1": "https://www.youtube.com/embed/d2tnwgcBfoA",
+        "songLink1": "https://www.youtube.com/embed/FpAkKxmIYVA",
         "songName2": "THEODORA - JTM 1 PEU / MON CASQUE",
         "songLink2": "https://www.youtube.com/embed/eDZM-tbEJbE",
         "date": "24-05-2025",
@@ -20,7 +20,7 @@
     {
         "id": 4,
         "name": "EDGE",
-        "image": "/artistes/EDGE.jpg",
+        "image": "/artistes-border/EDGE.png",
         "presentationFirst": "Edge commence à se forger un nom dans le monde du rap français dans le début des années 2020, notamment grâce à ses projets « Off » et « Offshore » qu’il réalise respectivement en 2020 et 2021. Sa plume affinée et ses productions aux sonorités parfois planantes, parfois plus brutes, lui permettent de se démarquer sur la scène rap francophone. Depuis ses débuts, Edge s’est forgé une réputation d’artiste authentique.",
         "presentationSecond": " Il a grandi dans un univers musical éclectique et polychrome, nourri par le rap des années 2000 et ses origines antillaises. Voix sombre sur productions au psychédélisme discret, lyrics brutes mais pudiques font d’Edge un artiste unique. Il est de retour en 2025 avec son album « De Janvier à Janvier » et une tournée francophone.",
         "songName1": "EDGE - Schémas Monotones",
@@ -39,7 +39,7 @@
     {
         "id": 1,
         "name": "AJNA",
-        "image": "/artistes/AJNA.jpeg",
+        "image": "/artistes-border/AJNA.png",
         "presentationFirst": "Lancé officiellement en 2022, Ajna compte s’inscrire dans les acteurs principaux de la nouvelle scène francophone. Avec cette voix suave reconnaissable entre mille, l’artiste marque les esprits au fil des projets partagés. Le dernier en date, “Boys & Basement” nous ramène au béton froid de l’Est parisien où seule la tentation de l’ivresse semble être l’échappatoire.",
         "presentationSecond": "Il marque les esprits avec deux titres en particulier : « Ajcension » et « Paraffine » qui cumulent plus de 2 millions de streams chacun. Ajna continue son bout de chemin et dévoile en décembre dernier un projet plus complet : « Boys & Basement », Ce projet nous ramène au béton froid de l’Est parisien où seule la tentation de l’ivresse semble être l’échappatoire. Un concentré de productions énigmatiques qui nous prennent par surprise et enchantent nos balades nocturnes. Il y capture l’essence de sa ville pour en laisser un portrait cynique de sa vie. Le quotidien d’un brokeboi solitaire observant le chaos pour n’en tirer que des rêves de réussite. Pierre après pierre, Ajna construit son royaume en comptant définitivement s’inscrire dans les acteurs principaux de la nouvelle scène francophone.",
         "songName1": "Ajna - SunrizZ",
@@ -59,7 +59,7 @@
     {
         "id": 2,
         "name": "DANYL",
-        "image": "/artistes/DANYL.jpg",
+        "image": "/artistes-border/DANYL.png",
         "presentationFirst": "Autodidacte, Danyl a commencé très tôt les productions pour lui comme pour les autres. Auteur, compositeur et beatmaker, il fait partie des premiers artistes à créer des morceaux en live sur la plateforme Twitch. Danyl est franco-algérien et puise dans les sonorités raï pour construire son univers musical. Inspiré par sa double culture et la modernité de son époque, il sort des sons qu’il rassemble sous le nom de Khedma (le travail en arabe). ",
         "presentationSecond":"",
         "songName1": "Danyl - Mazel",
@@ -77,7 +77,7 @@
     {
         "id": 5,
         "name": "BLOU FEET",
-        "image": "/artistes/BLOU_FEET.jpeg",
+        "image": "/artistes-border/BLOUFEET.png",
         "presentationFirst": "BLOU FEET est un artiste de 22 ans né à Hong Kong et ayant grandi à Shanghai. Il découvre la musique pendant le confinement, une période qui lui permet d’explorer son rapport au son et à la création. Déterminé à tout apprendre par lui-même, il se plonge dans la production musicale via YouTube, expérimentant des sonorités jusqu’à façonner un univers qui lui est propre.",
         "presentationSecond":"Autodidacte, il écrit, compose, interprète, mixe et masterise chacun de ses morceaux, affirmant ainsi une identité musicale indépendante et sincère. Depuis ses débuts, BLOU FEET n’a sorti que des singles, mais chacun d’eux témoigne d’une évolution artistique constante. Toujours en quête d’évolution, BLOU FEET continue d’explorer et d’expérimenter, avec l’ambition de repousser les frontières de son propre son.",
         "songName1": "BLOU FEET - UNE FOIS PAS DEUX",
@@ -95,7 +95,7 @@
     {
         "id": 6,
         "name": "REDHEAD",
-        "image": "/artistes/REDHEAD.jpg",
+        "image": "/artistes-border/REDHEAD.png",
         "presentationFirst": "redhead, artiste caennais, baigne dans la musique depuis son plus jeune âge. profondément inspiré par la culture pop-urbaine, les mangas, les courants artistiques émergents et la culture visuelle, redhead propose différents styles musicaux entre hyperpop, cloud-rap, rock et supertrap. après avoir sorti une trilogie d'ep, redhead souhaite passer un cap et proposer une expérience à ses auditeurs.",
         "songName1": "REDHEAD - ANIMÉ (prod. aime8!)",
         "songLink1": "https://www.youtube.com/embed/Vxop8AIZN_I",
@@ -112,7 +112,7 @@
     {
         "id": 7,
         "name": "Sherifflazone",
-        "image": "/artistes/sherifflazone.jpeg",
+        "image": "/artistes-border/SHERIFFLAZONE.png",
         "presentationFirst": "",
         "songName1": "SHERIFFLAZONE - MBELI",
         "songLink1": "https://www.youtube.com/embed/84RNrbM0Hvg",
@@ -129,7 +129,7 @@
     {
         "id": 8,
         "name": "s7un",
-        "image": "/artistes/s7un.jpg",
+        "image": "/artistes-border/S7UN.png",
         "presentationFirst": "s7un, rappeur caennais de 19 ans, fait tout pour créer une musique singulière. Influencé notamment par la culture hip hop et des artistes tel que Kendrick Lamar ou Tyler the creator, il tente de créer un univers hybride en reprenant les codes du rap en les adaptant à son époque. Cette esthétique prend forme dans son EP B2B, et dans sa prochaine mixtape MUSIQUE & VIOLENCE, prévu pour ce début d’année 2025.",
         "songName1": "s7un - est ce que tu me comprends ?",
         "songLink1": "https://www.youtube.com/embed/WDEb9oLETJI",
