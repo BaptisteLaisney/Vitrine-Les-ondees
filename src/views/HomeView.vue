@@ -35,13 +35,16 @@
     <div id="presentation-part">
       
       <div class="side side-left">
+       
         <div class="presentation">
+
           <h1>Les Ondées passent<br>sur 2 jours !</h1>
           <p>
             <strong> Les Ondées reviennent au Cargö les vendredi 23 et samedi 24 mai 2025</strong> ! <br>Après le succès des 3 précédentes éditions, le festival étudiant pour tous·tes passe la vitesse supérieure et propose 2 jours d’animations, de découvertes et surtout de concerts !
           </p>
+        
         </div>
-        <img src="/photos-selection/Spider Zed 3 (c)Lukastivecrea Border.png" alt="">
+        <img src="/photos-selection/thurb.png" alt="">
       </div>
       <div class="side side-right">
         <!-- <img src="/photos-selection/(c) nath_pics 3.jpg" alt=""> -->

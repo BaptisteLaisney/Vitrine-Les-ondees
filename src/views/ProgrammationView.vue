@@ -69,6 +69,7 @@ h1{
     position: relative;
 }
 
+/** Dates */
 .dates {
     display: flex;
     font-family: 'BlocHeavy';
@@ -95,6 +96,14 @@ h1{
     width: 100%;
     height: 100%;
 }
+.date-text {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    text-align: center;
+    width: 100%;
+}
 
 .wave-up, .wave-bottom{
     width: 100%;
@@ -115,14 +124,7 @@ h1{
     display: block;
 }
 
-.date-text {
-    position: relative;
-    z-index: 1;
-    font-size: 1.2rem;
-    padding: 0 10px;
-    text-align: center;
-    width: 100%;
-}
+
 
 .date2 .date-text {
     color: rgb(56, 56, 56);

@@ -24,7 +24,6 @@ body {
 }
 
 #lesondees {
-  background-color: rebeccapurple;
   margin: auto;
 }
 </style>

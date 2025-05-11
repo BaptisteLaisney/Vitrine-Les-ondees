@@ -8,6 +8,7 @@
     <ul>
       <li class="menu-item"><router-link to="/">Accueil</router-link></li>
       <li class="menu-item"><router-link to="/programmation">Programmation</router-link></li>
+      <li class="menu-item"><router-link to="/village">Village</router-link></li>
       <!-- <li class="menu-item"><router-link to="/a-propos">À propos</router-link></li> -->
       <li class="menu-item"><router-link to="/partenaires">Partenaires</router-link></li>
       <!-- <li class="menu-item"><router-link to="/contacts">Contacts</router-link></li> -->
@@ -20,6 +21,7 @@
         <ul>
           <li class="menu-item"><router-link to="/" @click="closeMenu">Accueil</router-link></li>
           <li class="menu-item"><router-link to="/programmation" @click="closeMenu">Programmation</router-link></li>
+          <li class="menu-item"><router-link to="/village" @click="closeMenu">Village</router-link></li>
           <!-- <li class="menu-item"><router-link to="/a-propos" @click="closeMenu">À propos</router-link></li> -->
           <li class="menu-item"><router-link to="/partenaires" @click="closeMenu">Partenaires</router-link></li>
           <!-- <li class="menu-item"><router-link to="/contacts" @click="closeMenu">Contacts</router-link></li> -->

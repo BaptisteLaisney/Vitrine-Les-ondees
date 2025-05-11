@@ -23,7 +23,7 @@ export default {
     },
     computed: {
         dateClass() {
-            return this.date === '23-05-2025' ? 'date1' : 'date2';
+            return this.date === '23-05-2025' ? 'date2' : 'date1';
         }
     }
 }
