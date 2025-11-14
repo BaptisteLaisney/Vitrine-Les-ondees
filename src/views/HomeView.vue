@@ -3,7 +3,7 @@
     <div id="first-part">
       
         <img src="../assets/lesondees/logo_claim_typo_blanc.png" alt="" id ="logo-nav">
-      <ButtonTicketing/>
+      <!-- <ButtonTicketing/> -->
 
       <video autoplay muted loop playsinline class="background custom-video" preload="auto">
         <source src="../assets/videos/After_movie.mov" type="video/mp4" />
@@ -16,6 +16,10 @@
       </div>
       
     </div>
+
+    <h2>2000 merci pour ces 2 jours de fêtes !</h2>
+      <Mercis/>
+      <ButtonCTA buttonText="Communiqué de presse" @someEvent="goToCP" color="white"/>
     <div id="artistes-summary-part">
       <router-link to="/programmation" id="nav-artistes-button">
         <p id="dates-artistes">
@@ -72,7 +76,6 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E86B2A" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,160C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
       </div>
 
-
       <h2>Nos actualités</h2>
       <Actualities/>
     </div>
@@ -97,7 +100,7 @@
         <ButtonCTA buttonText="Devenir partenaire" @someEvent="goToPartners" />
       </div>
     </div>
-    <ThePeopleCode/>
+ 
     <div id="bottom-part">
       <img src="../assets/lesondees/bottom_image.png" alt="" class="background">
       <div class="social-medias">
@@ -133,6 +136,7 @@ import ButtonCTA from '../components/shared/ButtonCTA.vue';
 import Artistes from '../components/artistes/Artistes.vue';
 import ButtonTicketing from '../components/ButtonTicketing.vue';
 import ThePeopleCode from '../components/partners/ThePeopleCode.vue';
+import Mercis from '../components/Mercis.vue';
 export default {
   components:{
     Photos,
@@ -141,7 +145,8 @@ export default {
     ButtonCTA,
     Artistes,
     ButtonTicketing,
-    ThePeopleCode
+    ThePeopleCode,
+    Mercis
   },
   data() {
     return {
@@ -152,6 +157,10 @@ export default {
     goToPartners() {
       const pdfUrl = "/partners/Dossier_de_partenariat_Les_Ondées_2025.pdf";
       window.open(pdfUrl, "_blank");
+    },
+    goToCP() {
+      const cpUrl = "/presse/CP_Bilan_2025.pdf";
+      window.open(cpUrl, "_blank");
     },
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen; // Basculer l'état du menu
