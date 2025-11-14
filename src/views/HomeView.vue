@@ -5,10 +5,16 @@
         <img src="../assets/lesondees/logo_claim_typo_blanc.png" alt="" id ="logo-nav">
       <!-- <ButtonTicketing/> -->
 
-      <video autoplay muted loop playsinline class="background custom-video" preload="auto">
-        <source src="../assets/videos/After_movie.mov" type="video/mp4" />
-        Votre navigateur ne supporte pas les vidéos HTML5.
-      </video>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/ZX5Iig3zYDM?autoplay=1&mute=1&loop=1&playlist=ZX5Iig3zYDM&controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&disablekb=1&fs=0"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          class="background custom-video"
+          title="After Movie Les Ondées"
+        ></iframe>
+        <div class="video-overlay"></div>
+      </div>
       <div class="wave-up">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path fill="#E86B2A" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,208C384,213,480,235,576,250.7C672,267,768,277,864,266.7C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
@@ -172,10 +178,35 @@ export default {
 .home{
   background-color: #E86B2A;
 }
+/* Video wrapper */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+}
+
 .custom-video {
-  width: 100%; /* Largeur fixe */
-  height: 75vh; /* Hauteur fixe pour un ratio 16:9 */
-  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw; /* Ratio 16:9 */
+  min-height: 100vh;
+  min-width: 177.77vh; /* Ratio 16:9 inversé */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* Overlay pour bloquer toute interaction */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: all;
 }
 
 /* First part */
@@ -386,11 +417,10 @@ h2{
       width: 250px;
       top: 0px;
       left: 20px;
-      
-    }
-  .custom-video {
-    height: 85vh;
 
+    }
+  .video-wrapper {
+    height: 85vh;
   }
   #billetterie-button{
     top: 20%;
